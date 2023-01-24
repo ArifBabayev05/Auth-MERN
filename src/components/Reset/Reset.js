@@ -1,30 +1,28 @@
 import React, { useState } from 'react'
-import { FcGoogle } from "react-icons/fc"
+import Input from '../Input/Input'
 import { MdVisibility } from "react-icons/md"
 import { MdVisibilityOff } from "react-icons/md"
-import Input from '../Input/Input'
-import "./login.css"
-const Login = () => {
+const Reset = () => {
     const [visible, setVisible] = useState(false)
-    const handleClick = ()=>{
+    const handleClick = () => {
         setVisible(!visible)
     }
     return (
-        <form className='login'>
-            <Input type="email" text="Email" />
+        <form className='Reset'>
             <Input type={visible ? "text" : "password"} icon={
                 visible ? <MdVisibility /> : <MdVisibilityOff />
             } text="Password"
-            handleClick={handleClick} />
+                handleClick={handleClick} />
+                
+            <Input type={visible ? "text" : "password"} icon={
+                visible ? <MdVisibility /> : <MdVisibilityOff />
+            } text="Confirm Password"
+                handleClick={handleClick} />
             <div className='login_btn'>
-                <button>Login</button>
-                <button className='btn-alt'>
-                    SignIn With <FcGoogle />
-                </button>
-
+                <button>Reset</button>
             </div>
         </form>
     )
 }
 
-export default Login
+export default Reset
