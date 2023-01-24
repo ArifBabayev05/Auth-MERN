@@ -1,9 +1,6 @@
 @import "../variables/variables.scss";
 
-// .login{
-//     background-color: $pink;
 
-// }
 .login_btn {
     display: flex;
     flex-direction: column;
@@ -14,7 +11,7 @@
         border-radius: 5px;
         border: none;
         text-transform: uppercase;
-        width: 370px;
+        width: 300px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
         color: #fff;
         cursor: pointer;
@@ -42,4 +39,12 @@
         box-shadow: none;
         background: linear-gradient(to right, $yellow, $pink);
      }
+}
+
+@include for-desktop{
+    .login_btn {
+        button {
+            width: 370px;    
+        }
+    }
 }

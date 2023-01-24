@@ -1,10 +1,11 @@
 .AuthLayout {
+  overflow-x: hidden;
   background: #1d1927;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
 }
 .AuthLayout .auth-logo {
   border-radius: 50%;
@@ -19,7 +20,7 @@
 .AuthLayout .actions {
   display: flex;
   justify-content: space-between;
-  max-width: 370px;
+  max-width: 300px;
   width: 100%;
   margin-top: 2em;
   padding: 0 2px;
@@ -31,6 +32,11 @@
   color: #fbc02d;
 }
 
+@media (min-width: 1200px) {
+  .AuthLayout .actions {
+    max-width: 370px;
+  }
+}
 @-webkit-keyframes float {
   0% {
     box-shadow: 0 5px 15px 0 rgba(252, 222, 255, 0.6);
@@ -53,7 +59,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0 rgba(252, 222, 255, 0.6);
