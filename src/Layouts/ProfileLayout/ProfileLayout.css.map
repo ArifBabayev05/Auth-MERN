@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"ProfileLayout.css"}
+{"version":3,"sources":["ProfileLayout.scss","../../components/variables/variables.scss","ProfileLayout.css"],"names":[],"mappings":"AAEA;EACE,mBCFY;ACCd;;AFIA;EACE,mBCNY;EDOZ,aAAA;EACA,gBAAA;AEDF","file":"ProfileLayout.css"}

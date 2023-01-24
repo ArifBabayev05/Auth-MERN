@@ -1,1 +1,9 @@
-/*# sourceMappingURL=ProfileLayout.css.map */
+body {
+  background: #1d1927;
+}
+
+.profilelayout {
+  background: #1d1927;
+  display: flex;
+  overflow: hidden;
+}/*# sourceMappingURL=ProfileLayout.css.map */
